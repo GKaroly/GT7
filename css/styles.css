@@ -126,3 +126,37 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Enyhe árnyékot ad a kép köré */
   width: min(100%, 600px);       /* A kép max 600px széles lehet, de kisebb kijelzőn automatikusan kisebb lesz */
 }
+
+.logo-inline {
+  width: 48px;          /* vagy 32px */
+  height: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.item1 {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.item1:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------------------------------------------
+   Link stílusok egységesítése
+   -------------------------------------------------------- */
+
+/* Alap linkstílus: szín, nincs aláhúzás */
+a,
+a:visited {
+  color: inherit;           /* örökli a szülő színét (vagy cseréld: pl. #ffffff) */
+  text-decoration: none;    /* eltünteti az aláhúzást */
+}
+
+/* Hover vagy fókusz állapotban legyen kiemelve */
+a:hover,
+a:focus {
+  color: #ffd700;           /* arany színre váltás (változtatható) */
+  text-decoration: underline;
+}
